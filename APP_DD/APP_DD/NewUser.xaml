@@ -1,0 +1,53 @@
+﻿<Window x:Class="APP_DD.Regist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APP_DD"
+        mc:Ignorable="d"
+        Title="Regist" Height="256" Width="300">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:CustomCommands.LogIntoProgram}" Executed="LogIn"/>
+    </Window.CommandBindings>
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Регистрация/вход" HorizontalAlignment="Center" Margin="10" FontSize="15"/>
+            <StackPanel Grid.Row="1" Orientation="Vertical"  HorizontalAlignment="Center">
+                <TextBlock Text="Логин:" VerticalAlignment="Center" Margin="5" />
+                <TextBox x:Name="LogTextBox"  Width="200" Height="21"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                <TextBlock Text="Email:" VerticalAlignment="Center" Margin="5" />
+                <TextBox x:Name="EmailTextBox"  Width="200" Height="22"/>
+            </StackPanel>
+            <Button  Grid.Row="3" Content="Отправить" Width="90"  Height="25" Command="local:CustomCommands.LogIntoProgram"><!--Click="ClickEventEnter"-->
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

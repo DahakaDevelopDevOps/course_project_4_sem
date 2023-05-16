@@ -12,22 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static APP_DD.Entities;
 
 namespace APP_DD
 {
     /// <summary>
     /// Логика взаимодействия для Registration.xaml
     /// </summary>
-    public partial class Registration : Page
+    public partial class Registration : Window
     {
         public Registration()
         {
             InitializeComponent();
         }
-       
+
         private void DescriptionTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+
+
     }
 }
