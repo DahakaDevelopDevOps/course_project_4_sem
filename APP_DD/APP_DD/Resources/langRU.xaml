@@ -1,0 +1,57 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="shopTitle">RentalAvenue</v:String>
+    <v:String x:Key="Tab1">Недвижимость</v:String>
+    <v:String x:Key="Tab2">Пользователи</v:String>
+    <v:String x:Key="Tab3">Oтзывы о приложении</v:String>
+    <v:String x:Key="AddItemButton">Добавить</v:String> 
+    <v:String x:Key="DeleteItemButton">Удалить по ID</v:String>
+    <v:String x:Key="AddImageButton">Загрузить изображение</v:String>
+    <v:String x:Key="ClearFormButton">Очистить форму</v:String>
+	<v:String x:Key="SeachLabel">Поиск:</v:String>
+    <v:String x:Key="Like">Понравилось</v:String>
+
+    <v:String x:Key="Id">№</v:String>
+    <v:String x:Key="PropertyLabel">Модель</v:String>
+    <v:String x:Key="PriceLabel">Новый/Б\У</v:String>
+    <v:String x:Key="AddresLabel">Стоимость аренды</v:String>
+    <v:String x:Key="MetrLabel">Метраж</v:String>
+    <v:String x:Key="ImagePathLabel">Путь к изображению</v:String>
+    <v:String x:Key="DescLabel">Описание</v:String>
+
+    <v:String x:Key="LoadDataFromFile">Загрузить из файла</v:String>
+    <v:String x:Key="SaveDataToFile">Сохранить данные в файл</v:String>
+    
+    <v:String x:Key="SelectLangLabel">Язык:</v:String>
+    <v:String x:Key="LangRu">Русский</v:String>
+    <v:String x:Key="LangEn">Английский</v:String>
+
+    <v:String x:Key="Regist">Вход/регистрация</v:String>
+    <v:String x:Key="Login">Логин</v:String>
+    <v:String x:Key="Email">Email</v:String>
+    <v:String x:Key="Submit">Подтвердить</v:String>
+
+    <v:String x:Key="RentLabel">Сдать жилье</v:String>
+    <v:String x:Key="TypeLabel">Выберите тип жилья</v:String>
+    <v:String x:Key="Price">Цена за 1 день($)</v:String>
+    <v:String x:Key="Img">Загрузить изображение</v:String>
+    <v:String x:Key="Metr">Метраж</v:String>
+
+    <v:String x:Key="UserAccount">Понравившиеся</v:String>
+    <v:String x:Key="RentHouse">Опубликовать предложение</v:String>
+    <v:String x:Key="Exit">Выход</v:String>
+    <v:String x:Key="Register">Регистрация</v:String>
+
+    <v:String x:Key="Write">Написать владельцу</v:String>
+    <v:String x:Key="Name">Имя</v:String>
+    <v:String x:Key="Review">Отзывы и рекомендации наших пользователей</v:String>
+
+    <v:String x:Key="AddReview">Оставить отзыв о приложении</v:String>
+    <v:String x:Key="ToMain">На главную</v:String>
+    <v:String x:Key="NewRew">Ваш отзыв</v:String>
+    <v:String x:Key="YourReview">Оставьте отзыв о приложении</v:String>
+
+</ResourceDictionary>
