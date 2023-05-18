@@ -10,5 +10,6 @@ namespace APP_DD
         public static readonly RoutedUICommand LogInRedirect = new("Возврат на страницу входа", "LogInRedirect", typeof(CustomCommands));
         public static readonly RoutedUICommand ShowAllCars = new("Вывод всех предложений по аренде", "ShowAllCars", typeof(CustomCommands));
         public static readonly RoutedUICommand Paste = new("Вставка изображения", "Paste", typeof(CustomCommands));
+        public static readonly RoutedUICommand AddCar = new("Добавление автомобиля", "Paste", typeof(CustomCommands));
     }
 }

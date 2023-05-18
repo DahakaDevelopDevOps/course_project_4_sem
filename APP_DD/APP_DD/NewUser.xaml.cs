@@ -28,6 +28,7 @@ namespace APP_DD
         public Regist()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
         public void LogIn(object sender, ExecutedRoutedEventArgs e)
         {
@@ -97,7 +98,8 @@ namespace APP_DD
                     _ = MessageBox.Show("Регистрация прошла успешно!", "Успешно", MessageBoxButton.OK, MessageBoxImage.Information);
                     //Regist = new();
                     //loginPage.Show();
-                    Close();
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
                 }
                 catch (Exception ex)
                 {

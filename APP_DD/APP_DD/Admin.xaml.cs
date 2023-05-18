@@ -98,7 +98,8 @@ namespace APP_DD
                 newItemID.Text = selectedModel.Id.ToString();
                 newItemProperty.Text = selectedModel.model;
                 newItemAddres.Text = selectedModel.IsNewOrNot.ToString();
-                newItemDesc.Text = selectedModel.description;
+                newItemDesc.Text = selectedModel.descriptionshort;
+                newItemDesc.Text = selectedModel.descriptionlarge;
                 newItemPrice.Text = selectedModel.total.ToString();
                 AddImageButton.Content = selectedModel.photo;
 

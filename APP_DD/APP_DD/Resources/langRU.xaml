@@ -14,10 +14,10 @@
 	<v:String x:Key="SeachLabel">Поиск:</v:String>
     <v:String x:Key="Like">Понравилось</v:String>
 
-    <v:String x:Key="Id">№</v:String>
+    <v:String x:Key="Id">Id</v:String>
     <v:String x:Key="PropertyLabel">Модель</v:String>
-    <v:String x:Key="PriceLabel">Новый/Б\У</v:String>
-    <v:String x:Key="AddresLabel">Стоимость аренды</v:String>
+    <v:String x:Key="PriceLabel">Стоимость аренды</v:String>
+    <v:String x:Key="AddresLabel">Новый или Б/У</v:String>
     <v:String x:Key="MetrLabel">Метраж</v:String>
     <v:String x:Key="ImagePathLabel">Путь к изображению</v:String>
     <v:String x:Key="DescLabel">Описание</v:String>

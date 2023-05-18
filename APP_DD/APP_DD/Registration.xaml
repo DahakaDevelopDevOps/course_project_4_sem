@@ -8,7 +8,10 @@
         Height="523" Width="450"
       Title="Registration"
       Margin="0">
-
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:CustomCommands.AddCar}" Executed="OnSubmit"/>
+        <CommandBinding Command="{x:Static local:CustomCommands.Paste}" Executed="LoadImageFile"/>
+    </Window.CommandBindings>
     <Grid x:Name="MainRent" Background="White" HorizontalAlignment="Center">
         <Grid>
             <Grid.RowDefinitions>
@@ -19,7 +22,7 @@
             <StackPanel Orientation="Vertical" Margin="10">
                 <TextBlock Text="Введите информацию для добавления:" FontWeight="Bold" />
                 <TextBlock FontWeight="Bold" Margin="0 10 0 0"><Run Language="ru-ru" Text="Фото транспорта"/></TextBlock>
-                <TextBox x:Name="AddressTextBox_Copy" Width="150" HorizontalAlignment="Left" Margin="0 10 0 0"/>
+                <Button x:Name="AddressTextBox_Copy" Width="150" Height="20" HorizontalAlignment="Left" Margin="0 10 0 0" Command="local:CustomCommands.Paste"/>
                 <StackPanel Margin="0 10 0 0">
                     <TextBlock Text="Модель автомобиля:" FontWeight="Bold" />
                     <TextBox HorizontalAlignment="Left" x:Name="AddressTextBox" Width="150" Margin="0 10 0 0"/>
@@ -27,11 +30,11 @@
                 <TextBlock Text="Стоимость в месяц ($):" FontWeight="Bold" Margin="0,10,0,0" />
                 <TextBox HorizontalAlignment="Left" Name="PriceTextBox" Width="150" Margin="0,5,0,0" />
 
-                <TextBlock Text="Значение пробега (км):" FontWeight="Bold" Margin="0,10,0,0" />
-                <TextBox HorizontalAlignment="Left" Name="Rided" Width="150" Margin="0,5,0,0" />
+                <TextBlock FontWeight="Bold" Margin="0,10,0,0" ><Run Language="ru-ru" Text="Краткое описание"/><Run Text=":"/></TextBlock>
+                <TextBox HorizontalAlignment="Left" Name="RidedTextBox" Width="150" Margin="0,5,0,0" />
 
                 <TextBlock Text="Состояние автомобиля:" FontWeight="Bold" Margin="0,10,0,0"></TextBlock>
-                <ComboBox SelectedIndex="0" Width="150" Margin="0,5,0,0" HorizontalAlignment="Left">
+                <ComboBox Name="IsNewOrNot" SelectedIndex="0" Width="150" Margin="0,5,0,0" HorizontalAlignment="Left">
                     <ComboBoxItem Content="Новое"/>
                     <ComboBoxItem Content="Б/У"/>
                 </ComboBox>
@@ -45,7 +48,7 @@
 
             </StackPanel>
             <TextBox x:Name="DescriptionTextBox" TextWrapping="Wrap" AcceptsReturn="True" TextChanged="DescriptionTextBox_TextChanged" Margin="0,43,2,83" Grid.Row="1" />
-            <Button Content="Опубликовать" Margin="10,117,191,45" Grid.Row="1" Width="84" Height="20"/>
+            <Button Content="Опубликовать" Margin="10,117,191,45" Grid.Row="1" Width="84" Height="20" Command="local:CustomCommands.AddCar"/>
             <Button Content="Отменить" Margin="191,117,10,45" Grid.Row="1" Width="84" Height="20"/>
 
         </Grid>

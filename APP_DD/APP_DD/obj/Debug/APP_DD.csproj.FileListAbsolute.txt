@@ -141,3 +141,5 @@ C:\Users\Dahaka\Documents\course_project_4_sem\APP_DD\APP_DD\bin\Debug\ru\Micros
 C:\Users\Dahaka\Documents\course_project_4_sem\APP_DD\APP_DD\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Dahaka\Documents\course_project_4_sem\APP_DD\APP_DD\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Dahaka\Documents\course_project_4_sem\APP_DD\APP_DD\obj\Debug\APP_DD.csproj.CopyComplete
+C:\Users\Dahaka\Documents\course_project_4_sem\APP_DD\APP_DD\obj\Debug\Card_mouse_down.g.cs
+C:\Users\Dahaka\Documents\course_project_4_sem\APP_DD\APP_DD\obj\Debug\Card_mouse_down.baml

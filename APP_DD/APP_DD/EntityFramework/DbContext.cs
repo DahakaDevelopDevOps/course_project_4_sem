@@ -8,6 +8,8 @@ namespace APP_DD.Entity_Framework
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Cars> Cars { get; set; }
+        public DbSet<Review> Review { get; set; }
+        public DbSet<FavoriteCars> FavoriteCars { get; set; }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {

@@ -6,37 +6,51 @@
         xmlns:local="clr-namespace:APP_DD"
         mc:Ignorable="d"
         Title="AddTransport" Height="468" Width="800">
-    <Grid x:Name="Transport_add" Background="White" HorizontalAlignment="Center">
+    <Window.Background>
+        <ImageBrush ImageSource="img\maxresdefault.jpg" Viewbox="0,0,0.5,1" Opacity="0.8"   />
+    </Window.Background>
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="5">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-
-            <StackPanel Orientation="Vertical" Margin="10">
-                <TextBlock Text="Задать вопрос:" FontWeight="Bold" />
-                <StackPanel Margin="0 30 15 0">
-                    <TextBlock Text="Номер операции:" FontWeight="Bold" />
-                    <TextBox HorizontalAlignment="Left" x:Name="AddressTextBox" Width="150" TextChanged="AddressTextBox_TextChanged" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="{DynamicResource YourReview}" HorizontalAlignment="Center" Margin="10" FontSize="15" Foreground="White"/>
+                <StackPanel Grid.Row="1" Orientation="Vertical"  HorizontalAlignment="Center">
+                    <TextBlock Text="{DynamicResource Login}" VerticalAlignment="Center" Margin="5" Foreground="White" />
+                    <TextBox x:Name="LogTextBox"  Width="200" Height="21" Foreground="White" BorderBrush="White"/>
                 </StackPanel>
-                <TextBlock Text="Краткое описание проблемы:" FontWeight="Bold" Margin="0,10,0,0" />
-                <TextBox HorizontalAlignment="Left" Name="PriceTextBox" Width="150" Margin="0,5,0,0" />
-
-                <TextBlock Text="Месторасположение:" FontWeight="Bold" Margin="0,10,0,0" />
-                <TextBox HorizontalAlignment="Left" Name="Rided" Width="150" Margin="0,5,0,0" />
-
-            </StackPanel>
-
-            <StackPanel Grid.Row="1" Margin="10,10,10,27">
-                <TextBlock Text="Дополнительная информация:" FontWeight="Bold"/>
-                <TextBox x:Name="DescriptionTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="80" />
-                <StackPanel Orientation="Horizontal">
-                    <Button Content="Отправить" Width="64" Margin="0,10,70,0" />
-                    <Button Content="Отменить" Width="64" Margin="15,10,0,0" />
+                <StackPanel Grid.Row="2" Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <TextBlock Text="{DynamicResource NewRew}" VerticalAlignment="Center" Margin="5" Foreground="White" />
+                    <TextBox x:Name="CommTextBox"  Width="200" Height="106" Foreground="White" BorderBrush="White"/>
                 </StackPanel>
-            </StackPanel>
-
-
+                <Button Grid.Row="3" Content="{DynamicResource Submit}" x:Name="Submit" Width="90"  Height="25" Background="#7B68EE" Foreground="White" Click="Submit_Click"  >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
+

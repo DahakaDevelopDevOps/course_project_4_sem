@@ -244,6 +244,9 @@
     <Compile Include="Admin.xaml.cs">
       <DependentUpon>Admin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Card_mouse_down.xaml.cs">
+      <DependentUpon>Card_mouse_down.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CompanyPolitics.xaml.cs">
       <DependentUpon>CompanyPolitics.xaml</DependentUpon>
     </Compile>
@@ -268,6 +271,10 @@
     <Page Include="Admin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Card_mouse_down.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CompanyPolitics.xaml">
       <SubType>Designer</SubType>
@@ -345,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Base.jfif" />
+    <Resource Include="img\maxresdefault.jpg" />
     <Resource Include="img\ImageForRegistration.png" />
     <Content Include="img\ImageForRegistration.svg" />
   </ItemGroup>
