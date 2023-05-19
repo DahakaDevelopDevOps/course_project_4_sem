@@ -42,6 +42,7 @@ namespace APP_DD
             //DataContext = admin;
             //// Отображаем первый отзыв
             //ShowCurrentReview();
+            ItemsList.ItemsSource = db.Review.ToList();
         }
         private void OnPrevClick(object sender, RoutedEventArgs e)
         {
